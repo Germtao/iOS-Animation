@@ -13,6 +13,7 @@
 		2B3520D21FD91C1A0021313A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3520D01FD91C1A0021313A /* LaunchScreen.storyboard */; };
 		2B3520DA1FD91F4B0021313A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520D91FD91F4B0021313A /* ViewController.swift */; };
 		2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520DB1FD91FC30021313A /* TTDefine.swift */; };
+		2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520DE1FD922B40021313A /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2B3520D31FD91C1A0021313A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3520D91FD91F4B0021313A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2B3520DB1FD91FC30021313A /* TTDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDefine.swift; sourceTree = "<group>"; };
+		2B3520DE1FD922B40021313A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		2B3520C61FD91C1A0021313A /* Animation_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				2B3520DD1FD922B40021313A /* Base */,
 				2B3520C71FD91C1A0021313A /* AppDelegate.swift */,
 				2B3520D91FD91F4B0021313A /* ViewController.swift */,
 				2B3520CB1FD91C1A0021313A /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				2B3520DB1FD91FC30021313A /* TTDefine.swift */,
 			);
 			path = Animation_Swift;
+			sourceTree = "<group>";
+		};
+		2B3520DD1FD922B40021313A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2B3520DE1FD922B40021313A /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
+				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,
 				2B3520DA1FD91F4B0021313A /* ViewController.swift in Sources */,
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
 			);
