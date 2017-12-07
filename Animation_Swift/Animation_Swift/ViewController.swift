@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     // MARK - Private Method
     private func initData() {
         
-        titles = ["基础动画", "关键帧动画", "组动画", "过渡动画", "仿射变换", "综合案例", "文字动画", "碎片动画"];
+        titles = ["基础动画", "关键帧动画", "组动画", "过渡动画", "仿射变换"];
     }
 
     private func initSubViews() {
@@ -114,12 +114,8 @@ extension ViewController: UITableViewDelegate {
             vc = GroupAnimationController()
         case 3:
             vc = TransitionAnimationController()
-//        case 4:
-//            vc = AffineTransformController()
-//        case 5:
-//            vc = ComprehensiveCaseViewController()
-//        case 6:
-//            vc = TTTextEffectsViewController()
+        case 4:
+            vc = AffineTransformController()
         default:
             break
         }
