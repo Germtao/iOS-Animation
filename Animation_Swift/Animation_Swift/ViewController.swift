@@ -108,12 +108,12 @@ extension ViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0:
             vc = BasicAnimationController()
-//        case 1:
-//            vc = KeyFrameAnimationController()
-//        case 2:
-//            vc = GroupAnimationController()
-//        case 3:
-//            vc = TransitionAnimationController()
+        case 1:
+            vc = KeyFrameAnimationController()
+        case 2:
+            vc = GroupAnimationController()
+        case 3:
+            vc = TransitionAnimationController()
 //        case 4:
 //            vc = AffineTransformController()
 //        case 5:
