@@ -15,6 +15,9 @@
 		2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520DB1FD91FC30021313A /* TTDefine.swift */; };
 		2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520DE1FD922B40021313A /* BaseViewController.swift */; };
 		2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E11FD923420021313A /* BasicAnimationController.swift */; };
+		2B3520E41FD928F10021313A /* KeyFrameAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E31FD928F10021313A /* KeyFrameAnimationController.swift */; };
+		2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E51FD929A20021313A /* GroupAnimationController.swift */; };
+		2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E71FD92A4E0021313A /* TransitionAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		2B3520DB1FD91FC30021313A /* TTDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDefine.swift; sourceTree = "<group>"; };
 		2B3520DE1FD922B40021313A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2B3520E11FD923420021313A /* BasicAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimationController.swift; sourceTree = "<group>"; };
+		2B3520E31FD928F10021313A /* KeyFrameAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationController.swift; sourceTree = "<group>"; };
+		2B3520E51FD929A20021313A /* GroupAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupAnimationController.swift; sourceTree = "<group>"; };
+		2B3520E71FD92A4E0021313A /* TransitionAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				2B3520E11FD923420021313A /* BasicAnimationController.swift */,
+				2B3520E31FD928F10021313A /* KeyFrameAnimationController.swift */,
+				2B3520E51FD929A20021313A /* GroupAnimationController.swift */,
+				2B3520E71FD92A4E0021313A /* TransitionAnimationController.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -163,7 +172,10 @@
 			files = (
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
 				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,
+				2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */,
+				2B3520E41FD928F10021313A /* KeyFrameAnimationController.swift in Sources */,
 				2B3520DA1FD91F4B0021313A /* ViewController.swift in Sources */,
+				2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */,
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
 				2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */,
 			);
