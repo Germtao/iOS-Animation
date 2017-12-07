@@ -103,11 +103,11 @@ extension ViewController: UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-//        var vc = BaseViewController()
-//
-//        switch indexPath.row {
-//        case 0:
-//            vc = BasicAnimationController()
+        var vc = BaseViewController()
+        
+        switch indexPath.row {
+        case 0:
+            vc = BasicAnimationController()
 //        case 1:
 //            vc = KeyFrameAnimationController()
 //        case 2:
@@ -120,13 +120,13 @@ extension ViewController: UITableViewDelegate {
 //            vc = ComprehensiveCaseViewController()
 //        case 6:
 //            vc = TTTextEffectsViewController()
-//        default:
-//            break
-//        }
+        default:
+            break
+        }
         
-//        vc.view.backgroundColor = UIColor.white
-//        vc.title = titles[indexPath.row]
-//        self.navigationController?.pushViewController(vc, animated: true)
+        vc.view.backgroundColor = UIColor.white
+        vc.title = titles[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
