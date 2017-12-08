@@ -33,6 +33,9 @@
         case 1:
             [self opacityAnimate];
             break;
+        case 2:
+            [self scaleAnimate];
+            break;
             
         default:
             break;
@@ -76,6 +79,24 @@
     anim.duration  = 1.0;
     
     [self.animView.layer addAnimation:anim forKey:@"opacityAnimation"];
+}
+
+// 缩放动画
+- (void)scaleAnimate {
+    
+//    CABasicAnimation *anim = [self scaleAnimate:@"bounds" value:[NSValue valueWithCGRect:CGRectMake(0, 0, 200, 200)]];
+//    CABasicAnimation *anim = [self scaleAnimate:@"transform.scale.x" value:[NSNumber numberWithFloat:2.0]];
+    
+    CABasicAnimation *anim = [self scaleAnimate:@"transform.scale" value:[NSNumber numberWithFloat:2.0]];
+    
+    [self.animView.layer addAnimation:anim forKey:@"scaleAnimation"];
+}
+
+- (CABasicAnimation *)scaleAnimate:(NSString *)keyPath value:(id)value {
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:keyPath];
+    anim.toValue = value;
+    anim.duration = 1.0;
+    return anim;
 }
 
 #pragma mark - Helper
