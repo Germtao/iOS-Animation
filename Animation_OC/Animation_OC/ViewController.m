@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BaseViewController.h"
+#import "BasicAnimViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -87,6 +89,26 @@
     [self setupCell:cell title:self.titles[indexPath.row]];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    BaseViewController * vc = [BaseViewController new];
+    
+    switch (indexPath.row) {
+        case 0:
+            vc = [BasicAnimViewController new];
+            break;
+            
+        default:
+            break;
+    }
+    
+    vc.title = self.titles[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 懒加载
