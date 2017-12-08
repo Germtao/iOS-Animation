@@ -36,6 +36,9 @@
         case 2:
             [self scaleAnimate];
             break;
+        case 3:
+            [self rotateAnimate];
+            break;
             
         default:
             break;
@@ -92,16 +95,20 @@
     [self.animView.layer addAnimation:anim forKey:@"scaleAnimation"];
 }
 
+// 旋转动画
+- (void)rotateAnimate {
+    CABasicAnimation *anim = [self scaleAnimate:@"transform.rotation.z" value:[NSNumber numberWithFloat:M_PI]];
+    [self.animView.layer addAnimation:anim forKey:@"rotateAnimation"];
+}
+
+#pragma mark - Helper
+
 - (CABasicAnimation *)scaleAnimate:(NSString *)keyPath value:(id)value {
     CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:keyPath];
     anim.toValue = value;
     anim.duration = 1.0;
     return anim;
 }
-
-#pragma mark - Helper
-
-
 
 #pragma mark - 懒加载
 
