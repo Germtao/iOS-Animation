@@ -39,6 +39,9 @@
         case 3:
             [self rotateAnimate];
             break;
+        case 4:
+            [self backgroundColorAnimate];
+            break;
             
         default:
             break;
@@ -97,8 +100,28 @@
 
 // 旋转动画
 - (void)rotateAnimate {
-    CABasicAnimation *anim = [self scaleAnimate:@"transform.rotation.z" value:[NSNumber numberWithFloat:M_PI]];
+    // 绕着 z 轴旋转
+    // CABasicAnimation *anim = [self scaleAnimate:@"transform.rotation.z" value:[NSNumber numberWithFloat:M_PI]];
+    
+    // 绕着 x/y/z轴旋转
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"transform"];
+    anim.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)]; // 相当于绕 z 轴旋转
+    anim.repeatCount = MAXFLOAT;
+    anim.duration = 0.3;
+    
     [self.animView.layer addAnimation:anim forKey:@"rotateAnimation"];
+}
+
+// 背景色动画
+- (void)backgroundColorAnimate {
+    CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
+    anim.toValue = (__bridge id)[UIColor cyanColor].CGColor;
+    anim.duration = 1.0;
+    
+    anim.fillMode = kCAFillModeForwards;
+    anim.removedOnCompletion = NO;
+    
+    [self.animView.layer addAnimation:anim forKey:@"backgroundColorAnimation"];
 }
 
 #pragma mark - Helper
