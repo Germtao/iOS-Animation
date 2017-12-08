@@ -1,0 +1,32 @@
+//
+//  Prefix.pch
+//  Animation_OC
+//
+//  Created by TAO on 2017/12/7.
+//  Copyright © 2017年 ShaggyT. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// 判断是否为 iPhoneX
+#define IsiPhoneX        (([UIScreen mainScreen].bounds.size.height == 812.f) ? YES : NO)
+
+// 宽高
+#define kSCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define kSCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+// 安全区域
+#define kSAFEAREA_HEIGHT (kSCREEN_HEIGHT - kNAVBAR_STATUS_HEIGHT - kTABBAR_HEIGHT)
+
+// tabBar 高度
+#define kTABBAR_HEIGHT         (IsiPhoneX ? 83 : 49)
+#define kTABBAR_BOTTOM_HEIGHT  (IsiPhoneX ? 34 : 0)
+
+// navBar 高度
+#define kNAVBAR_HEIGHT  44
+#define kNAVBAR_STATUS_HEIGHT (kNAVBAR_HEIGHT + kSTATUSBAR_HEIGHT)
+
+// statusBar 高度
+#define kSTATUSBAR_HEIGHT  (IsiPhoneX ? 44 : 20)
+
+#endif /* Prefix_pch */
