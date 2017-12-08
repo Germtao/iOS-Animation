@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 #pragma mark - Public Method
@@ -26,7 +27,7 @@
     if (array.count > 0) {
         NSInteger row = (array.count % 4 == 0) ? array.count / 4 : (array.count / 4 + 1);
         
-        CGRect rect = CGRectMake(0, kSCREEN_HEIGHT - (row * 50 + 20), kSCREEN_WIDTH, row * 50 + 20);
+        CGRect rect = CGRectMake(0, kSCREEN_HEIGHT - (row * 50 + 20) - kTABBAR_BOTTOM_HEIGHT, kSCREEN_WIDTH, row * 50 + 20);
         UIView *bgView = [[UIView alloc] initWithFrame:rect];
         bgView.backgroundColor = [UIColor cyanColor];
         [self.view addSubview:bgView];
