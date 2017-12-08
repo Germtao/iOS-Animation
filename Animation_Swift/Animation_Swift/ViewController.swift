@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     // MARK - Private Method
     private func initData() {
         
-        titles = ["基础动画", "关键帧动画", "组动画", "过渡动画", "仿射变换"];
+        titles = ["基础动画", "关键帧动画", "组动画", "过渡动画", "仿射变换"]
     }
 
     private func initSubViews() {

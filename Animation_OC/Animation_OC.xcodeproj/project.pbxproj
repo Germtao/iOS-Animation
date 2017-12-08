@@ -26,6 +26,7 @@
 		2B3521051FD933D30021313A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3521071FD933D30021313A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3521081FD933D30021313A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B35210F1FD93C930021313A /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				2B3520FA1FD933D30021313A /* AppDelegate.m */,
 				2B3520FC1FD933D30021313A /* ViewController.h */,
 				2B3520FD1FD933D30021313A /* ViewController.m */,
+				2B35210F1FD93C930021313A /* Prefix.pch */,
 				2B3520FF1FD933D30021313A /* Main.storyboard */,
 				2B3521021FD933D30021313A /* Assets.xcassets */,
 				2B3521041FD933D30021313A /* LaunchScreen.storyboard */,
@@ -279,7 +281,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/tao/GitHub/iOSAnimation/Animation_OC/Animation_OC/Prefix.pch;
 				INFOPLIST_FILE = Animation_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShaggyT.Animation-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,7 +297,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/tao/GitHub/iOSAnimation/Animation_OC/Animation_OC/Prefix.pch;
 				INFOPLIST_FILE = Animation_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ShaggyT.Animation-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
