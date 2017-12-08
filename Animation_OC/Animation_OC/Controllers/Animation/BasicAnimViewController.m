@@ -26,6 +26,8 @@
 
 - (void)buttonDidTap:(UIButton *)button {
     
+    [self removeAnimtion];
+    
     switch (button.tag) {
         case 0:
             [self positionAnimate];
@@ -41,6 +43,9 @@
             break;
         case 4:
             [self backgroundColorAnimate];
+            break;
+        case 5:
+            [self springAnimate];
             break;
             
         default:
@@ -124,6 +129,22 @@
     [self.animView.layer addAnimation:anim forKey:@"backgroundColorAnimation"];
 }
 
+// 弹簧动画
+- (void)springAnimate {
+    
+    CASpringAnimation *anim = [CASpringAnimation animationWithKeyPath:@"position.x"];
+    
+    anim.damping = 5;                       // 阻尼
+    anim.stiffness = 100;                   // 弹性
+    anim.mass = 1;                          // 质量
+    anim.initialVelocity = 0;               // 初始速度
+    anim.duration = anim.settlingDuration;  // 结算时间
+    anim.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.animView.layer.position.x, 0)];
+    anim.toValue = [NSValue valueWithCGPoint:CGPointMake(self.animView.layer.position.x + 100, 0)];
+    
+    [self.animView.layer addAnimation:anim forKey:@"springAnimation"];
+}
+
 #pragma mark - Helper
 
 - (CABasicAnimation *)scaleAnimate:(NSString *)keyPath value:(id)value {
@@ -131,6 +152,10 @@
     anim.toValue = value;
     anim.duration = 1.0;
     return anim;
+}
+
+- (void)removeAnimtion {
+    [self.animView.layer removeAllAnimations];
 }
 
 #pragma mark - 懒加载
