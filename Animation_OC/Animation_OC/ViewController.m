@@ -11,6 +11,7 @@
 #import "BasicAnimViewController.h"
 #import "KeyFrameAnimationController.h"
 #import "GroupAnimationController.h"
+#import "TransitionAnimationController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -109,6 +110,9 @@
             break;
         case 2:
             vc = [GroupAnimationController new];
+            break;
+        case 3:
+            vc = [TransitionAnimationController new];
             break;
             
         default:

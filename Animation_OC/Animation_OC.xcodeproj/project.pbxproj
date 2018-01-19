@@ -17,6 +17,7 @@
 		2B7050882011A293000DFA42 /* GroupAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7050872011A293000DFA42 /* GroupAnimationController.m */; };
 		2BB4131D1FDA286B00BBBB8D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4131C1FDA286B00BBBB8D /* BaseViewController.m */; };
 		2BB413201FDA315100BBBB8D /* BasicAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4131F1FDA315100BBBB8D /* BasicAnimViewController.m */; };
+		2BEA30892011E9DB00AEE6BA /* TransitionAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		2BB4131C1FDA286B00BBBB8D /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2BB4131E1FDA315100BBBB8D /* BasicAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicAnimViewController.h; sourceTree = "<group>"; };
 		2BB4131F1FDA315100BBBB8D /* BasicAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAnimViewController.m; sourceTree = "<group>"; };
+		2BEA30872011E9DB00AEE6BA /* TransitionAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationController.h; sourceTree = "<group>"; };
+		2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				2B705084201192D8000DFA42 /* KeyFrameAnimationController.m */,
 				2B7050862011A293000DFA42 /* GroupAnimationController.h */,
 				2B7050872011A293000DFA42 /* GroupAnimationController.m */,
+				2BEA30872011E9DB00AEE6BA /* TransitionAnimationController.h */,
+				2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B705085201192D8000DFA42 /* KeyFrameAnimationController.m in Sources */,
+				2BEA30892011E9DB00AEE6BA /* TransitionAnimationController.m in Sources */,
 				2B3520FE1FD933D30021313A /* ViewController.m in Sources */,
 				2BB4131D1FDA286B00BBBB8D /* BaseViewController.m in Sources */,
 				2B3521091FD933D30021313A /* main.m in Sources */,
@@ -330,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/mac-01/Desktop/iOS-Animation/Animation_OC/Animation_OC/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/tao/GitHub/iOS-Animation/Animation_OC/Animation_OC/Prefix.pch";
 				INFOPLIST_FILE = Animation_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -346,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/mac-01/Desktop/iOS-Animation/Animation_OC/Animation_OC/Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/tao/GitHub/iOS-Animation/Animation_OC/Animation_OC/Prefix.pch";
 				INFOPLIST_FILE = Animation_OC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
