@@ -10,8 +10,6 @@
 
 @interface BasicAnimViewController ()
 
-@property (nonatomic, strong) UIView *animView;
-
 @end
 
 @implementation BasicAnimViewController
@@ -21,7 +19,6 @@
     
     self.titles = @[@"位移", @"透明度", @"缩放", @"旋转", @"背景色", @"弹簧动画"];
     [self createButton:self.titles];
-    [self.view addSubview:self.animView];
 }
 
 - (void)buttonDidTap:(UIButton *)button {
@@ -154,18 +151,6 @@
     return anim;
 }
 
-- (void)removeAnimtion {
-    [self.animView.layer removeAllAnimations];
-}
 
-#pragma mark - 懒加载
-
-- (UIView *)animView {
-    if (!_animView) {
-        _animView = [[UIView alloc] initWithFrame:CGRectMake(kSCREEN_WIDTH / 2 - 50, kSAFEAREA_HEIGHT / 2 - 50, 100, 100)];
-        _animView.backgroundColor = [UIColor redColor];
-    }
-    return _animView;
-}
 
 @end

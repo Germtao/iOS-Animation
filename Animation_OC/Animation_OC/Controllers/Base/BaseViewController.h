@@ -10,6 +10,8 @@
 
 @interface BaseViewController : UIViewController
 
+@property (nonatomic, strong) UIView *animView;
+
 @property (nonatomic, strong) NSArray *titles;
 
 /**
@@ -20,5 +22,10 @@
 - (void)createButton:(NSArray *)array;
 
 - (void)buttonDidTap:(UIButton *)button;
+
+/**
+ 移除动画
+ */
+- (void)removeAnimtion;
 
 @end

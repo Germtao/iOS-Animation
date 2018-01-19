@@ -18,6 +18,12 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.animView];
+}
+
+- (void)removeAnimtion {
+    [self.animView.layer removeAllAnimations];
 }
 
 #pragma mark - Public Method
@@ -84,6 +90,14 @@
         _titles = [[NSArray alloc] init];
     }
     return _titles;
+}
+
+- (UIView *)animView {
+    if (!_animView) {
+        _animView = [[UIView alloc] initWithFrame:CGRectMake(kSCREEN_WIDTH / 2 - 50, kSAFEAREA_HEIGHT / 2 - 50, 100, 100)];
+        _animView.backgroundColor = [UIColor redColor];
+    }
+    return _animView;
 }
 
 @end
