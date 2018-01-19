@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BaseViewController.h"
 #import "BasicAnimViewController.h"
+#import "KeyFrameAnimationController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -102,6 +103,9 @@
         case 0:
             vc = [BasicAnimViewController new];
             break;
+        case 1:
+            vc = [KeyFrameAnimationController new];
+            break;
             
         default:
             break;
@@ -117,6 +121,7 @@
     if (!_tableView) {
         CGRect rect = CGRectMake(0, kNAVBAR_STATUS_HEIGHT, kSCREEN_WIDTH, kSCREEN_HEIGHT - kNAVBAR_STATUS_HEIGHT);
         _tableView = [[UITableView alloc] initWithFrame:rect style:UITableViewStylePlain];
+        _tableView.tableFooterView = [UIView new];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
