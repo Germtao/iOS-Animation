@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 #import "BasicAnimViewController.h"
 #import "KeyFrameAnimationController.h"
+#import "GroupAnimationController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -105,6 +106,9 @@
             break;
         case 1:
             vc = [KeyFrameAnimationController new];
+            break;
+        case 2:
+            vc = [GroupAnimationController new];
             break;
             
         default:
