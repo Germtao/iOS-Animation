@@ -12,7 +12,16 @@
 
 @property (nonatomic, strong) UIView *animView;
 
+@property (nonatomic, strong) UILabel *animLabel;
+
 @property (nonatomic, strong) NSArray *titles;
+
+@property (nonatomic, assign) NSInteger currentIndex;
+
+/**
+ animView frame
+ */
+@property (nonatomic, assign) CGRect rect;
 
 /**
  创建按钮
@@ -27,5 +36,10 @@
  移除动画
  */
 - (void)removeAnimtion;
+
+/**
+ 设置label值
+ */
+- (void)changeLabelText:(BOOL)isUp;
 
 @end

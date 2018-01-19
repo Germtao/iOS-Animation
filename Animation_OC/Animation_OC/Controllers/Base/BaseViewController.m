@@ -48,6 +48,14 @@
     }
 }
 
+- (void)changeLabelText:(BOOL)isUp {
+    if (isUp) {
+        self.currentIndex += 1;
+    } else {
+        self.currentIndex -= 1;
+    }
+}
+
 #pragma mark - Action
 
 - (void)buttonDidTap:(UIButton *)button {
@@ -83,6 +91,34 @@
     return CGRectMake(offsetX, offsetY, btnW, btnH);
 }
 
+#pragma mark - Setter
+
+- (void)setRect:(CGRect)rect {
+    _rect = rect;
+    
+    self.animLabel.hidden = NO;
+    self.animView.frame  = rect;
+    self.animLabel.frame = CGRectMake(rect.size.width / 2 - 10, rect.size.height / 2 - 20, 20, 40);
+}
+
+- (void)setCurrentIndex:(NSInteger)currentIndex {
+    _currentIndex = currentIndex;
+    
+    if (_currentIndex > 3) {
+        _currentIndex = 0;
+    }
+    
+    if (_currentIndex < 0) {
+        _currentIndex = 3;
+    }
+    
+    NSArray *colors = @[[UIColor cyanColor], [UIColor magentaColor], [UIColor orangeColor], [UIColor purpleColor]];
+    NSArray *titles = @[@"0", @"1", @"2", @"3"];
+    
+    self.animView.backgroundColor = colors[_currentIndex];
+    self.animLabel.text           = titles[_currentIndex];
+}
+
 #pragma mark - 懒加载
 
 - (NSArray *)titles {
@@ -98,6 +134,17 @@
         _animView.backgroundColor = [UIColor redColor];
     }
     return _animView;
+}
+
+- (UILabel *)animLabel {
+    if (!_animLabel) {
+        _animLabel = [[UILabel alloc] init];
+        _animLabel.textAlignment = NSTextAlignmentCenter;
+        _animLabel.font = [UIFont systemFontOfSize:28];
+        _animLabel.hidden = YES;
+        [self.animView addSubview:_animLabel];
+    }
+    return _animLabel;
 }
 
 @end
