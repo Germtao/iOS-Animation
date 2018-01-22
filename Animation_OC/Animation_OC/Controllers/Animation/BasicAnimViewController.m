@@ -22,7 +22,6 @@
 }
 
 - (void)buttonDidTap:(UIButton *)button {
-    
     [self removeAnimtion];
     
     switch (button.tag) {
@@ -48,7 +47,6 @@
         default:
             break;
     }
-    
 }
 
 #pragma mark - 动画

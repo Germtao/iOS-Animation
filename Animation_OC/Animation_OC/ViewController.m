@@ -12,6 +12,7 @@
 #import "KeyFrameAnimationController.h"
 #import "GroupAnimationController.h"
 #import "TransitionAnimationController.h"
+#import "AffineTransformViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -114,8 +115,8 @@
         case 3:
             vc = [TransitionAnimationController new];
             break;
-            
         default:
+            vc = [AffineTransformViewController new];
             break;
     }
     

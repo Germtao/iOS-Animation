@@ -18,6 +18,7 @@
 		2BB4131D1FDA286B00BBBB8D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4131C1FDA286B00BBBB8D /* BaseViewController.m */; };
 		2BB413201FDA315100BBBB8D /* BasicAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4131F1FDA315100BBBB8D /* BasicAnimViewController.m */; };
 		2BEA30892011E9DB00AEE6BA /* TransitionAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */; };
+		71603E9B2015893A0016DB93 /* AffineTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71603E9A2015893A0016DB93 /* AffineTransformViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		2BB4131F1FDA315100BBBB8D /* BasicAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAnimViewController.m; sourceTree = "<group>"; };
 		2BEA30872011E9DB00AEE6BA /* TransitionAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationController.h; sourceTree = "<group>"; };
 		2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationController.m; sourceTree = "<group>"; };
+		71603E992015893A0016DB93 /* AffineTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AffineTransformViewController.h; sourceTree = "<group>"; };
+		71603E9A2015893A0016DB93 /* AffineTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AffineTransformViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				2B7050872011A293000DFA42 /* GroupAnimationController.m */,
 				2BEA30872011E9DB00AEE6BA /* TransitionAnimationController.h */,
 				2BEA30882011E9DB00AEE6BA /* TransitionAnimationController.m */,
+				71603E992015893A0016DB93 /* AffineTransformViewController.h */,
+				71603E9A2015893A0016DB93 /* AffineTransformViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71603E9B2015893A0016DB93 /* AffineTransformViewController.m in Sources */,
 				2B705085201192D8000DFA42 /* KeyFrameAnimationController.m in Sources */,
 				2BEA30892011E9DB00AEE6BA /* TransitionAnimationController.m in Sources */,
 				2B3520FE1FD933D30021313A /* ViewController.m in Sources */,
