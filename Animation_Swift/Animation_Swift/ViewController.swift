@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "动画效果"
-        navigationController?.navigationBar.barTintColor = UIColor.cyan
-        
         initData()
         
         initSubViews()
@@ -49,17 +46,16 @@ class ViewController: UIViewController {
     
     // MARK - Private Method
     private func initData() {
-        
         titles = ["基础动画", "关键帧动画", "组动画", "过渡动画", "仿射变换"]
     }
 
     private func initSubViews() {
-        
-        let frame: CGRect = CGRect.init(x: 0, y: 20, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT - 20)
+        let frame: CGRect = CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT - kNAVIBAR_HEIGHT)
         tableView = UITableView.init(frame: frame, style: UITableViewStyle.plain)
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.contentInset = UIEdgeInsetsMake(10, 0, 10, 0)
+        tableView.tableFooterView = UIView()
         self.view.addSubview(tableView)
     }
 }

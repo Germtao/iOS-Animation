@@ -22,7 +22,7 @@ class BaseViewController: UIViewController {
         if  array.count > 0 {
             
             let row: NSInteger = array.count % 4 == 0 ? array.count / 4 : array.count / 4 + 1
-            let operateView = UIView.init(frame: CGRect(x: 0.0, y: kSCREEN_HEIGHT-CGFloat(row*50+20) - kTABBAR_HEIGHT, width: kSCREEN_WIDTH, height: CGFloat(row*50+20)))
+            let operateView = UIView.init(frame: CGRect(x: 0.0, y: kSCREEN_HEIGHT - CGFloat(row*50+20) - kTABBAR_HEIGHT - kTABBAR_BOTTOM_HEIGHT, width: kSCREEN_WIDTH, height: CGFloat(row*50+20) + kTABBAR_BOTTOM_HEIGHT))
             operateView.backgroundColor = UIColor.cyan
             self.view.addSubview(operateView)
             
