@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        configureNavBar()
+        configureStatusBar()
+        
         return true
     }
 
@@ -39,7 +42,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    // MARK: - 设置navBar & statusBar
+    
+    let gray = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+    
+    /// 配置 navBar
+    func configureNavBar() {
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().isOpaque      = true
+        UINavigationBar.appearance().barTintColor  = gray
+        UINavigationBar.appearance().tintColor     = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+    }
+    
+    /// 配置 statusBar
+    func configureStatusBar() {
+        UIApplication.shared.statusBarStyle = .lightContent
+        setStatusBarBackgroundColor(gray)
+    }
+    
+    func setStatusBarBackgroundColor(_ color: UIColor) {
+        guard let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else { return }
+        statusBar.backgroundColor = color
+    }
 }
+
+
 
