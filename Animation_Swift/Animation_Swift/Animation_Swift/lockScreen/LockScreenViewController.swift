@@ -10,61 +10,37 @@ import UIKit
 
 class LockScreenViewController: UIViewController {
     
-    lazy var toplockView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "toplock")
-        view.addSubview(imageView)
-        return imageView
-    }()
+    var toplockView: UIImageView!
     
-    lazy var bottomlockView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "bottomlock")
-        view.addSubview(imageView)
-        return imageView
-    }()
+    var bottomlockView: UIImageView!
     
-    lazy var lockborderView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "lockborder")
-        view.addSubview(imageView)
-        return imageView
-    }()
+    var lockborderView: UIImageView!
     
-    lazy var lockkeyholeView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "lockkeyhole")
-        view.addSubview(imageView)
-        return imageView
-    }()
+    var lockkeyholeView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        toplockView.frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2)
-        bottomlockView.frame = CGRect(x: 0, y: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2, width: kSCREEN_WIDTH, height: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2)
-        lockborderView.frame = CGRect(x: view.center.x - 110 / 2, y: toplockView.frame.maxY - 110 / 2, width: 110, height: 110)
-        lockkeyholeView.frame = CGRect(x: view.center.x - 70 / 2, y: toplockView.frame.maxY - 70 / 2, width: 70, height: 70)
+        createUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        view.backgroundColor = UIColor.purple
         openLock()
     }
     
     func openLock() {
-        UIView.animate(withDuration: 1, delay: 2, options: [], animations: {
-            self.lockkeyholeView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
+        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: { [weak self] in
+            self?.lockkeyholeView.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2)
         }) { (_) in
-            UIView.animate(withDuration: 1, delay: 2, options: [], animations: {
+            UIView.animate(withDuration: 1, delay: 2, options: [], animations: { [weak self] in
                 
-                let yDetal = self.toplockView.frame.maxY
+                guard let yDetal = self?.toplockView.frame.maxY else { return }
                 
-                self.toplockView.center.y -= yDetal
-                self.bottomlockView.center.y += yDetal
-                self.lockborderView.center.y -= yDetal
-                self.lockkeyholeView.center.y -= yDetal
+                self?.toplockView.center.y -= yDetal
+                self?.bottomlockView.center.y += yDetal
+                self?.lockborderView.center.y -= yDetal
+                self?.lockkeyholeView.center.y -= yDetal
                 
             }, completion: { (_) in
                 self.toplockView.removeFromSuperview()
@@ -74,4 +50,34 @@ class LockScreenViewController: UIViewController {
             })
         }
     }
+}
+
+// MARK: - 创建 UI
+extension LockScreenViewController {
+    
+    func createUI() {
+        
+        toplockView = createView(imageName: "toplock")
+        toplockView.frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2)
+        view.addSubview(toplockView)
+        
+        bottomlockView = createView(imageName: "bottomlock")
+        bottomlockView.frame = CGRect(x: 0, y: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2, width: kSCREEN_WIDTH, height: (kSCREEN_HEIGHT - kNAVIBAR_HEIGHT) / 2)
+        view.addSubview(bottomlockView)
+        
+        lockborderView = createView(imageName: "lockborder")
+        lockborderView.frame = CGRect(x: view.center.x - 110 / 2, y: toplockView.frame.maxY - 110 / 2, width: 110, height: 110)
+        view.addSubview(lockborderView)
+        
+        lockkeyholeView = createView(imageName: "lockkeyhole")
+        lockkeyholeView.frame = CGRect(x: view.center.x - 70 / 2, y: toplockView.frame.maxY - 70 / 2, width: 70, height: 70)
+        view.addSubview(lockkeyholeView)
+    }
+    
+    private func createView(imageName: String) -> UIImageView {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: imageName)
+        return imageView
+    }
+    
 }
