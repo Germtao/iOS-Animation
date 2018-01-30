@@ -19,6 +19,11 @@
 		2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E51FD929A20021313A /* GroupAnimationController.swift */; };
 		2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E71FD92A4E0021313A /* TransitionAnimationController.swift */; };
 		2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E91FD92B810021313A /* AffineTransformController.swift */; };
+		710CFFB72018705400C3F49E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CFFB62018705400C3F49E /* MasterViewController.swift */; };
+		710CFFB9201884CE00C3F49E /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CFFB8201884CE00C3F49E /* LeftViewController.swift */; };
+		71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE690201B03E000D3CBA1 /* Entry.swift */; };
+		71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE692201B04EB00D3CBA1 /* EntryCell.swift */; };
+		71AEE695201B06AE00D3CBA1 /* NavBarAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		2B3520E51FD929A20021313A /* GroupAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupAnimationController.swift; sourceTree = "<group>"; };
 		2B3520E71FD92A4E0021313A /* TransitionAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimationController.swift; sourceTree = "<group>"; };
 		2B3520E91FD92B810021313A /* AffineTransformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffineTransformController.swift; sourceTree = "<group>"; };
+		710CFFB62018705400C3F49E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		710CFFB8201884CE00C3F49E /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		71AEE690201B03E000D3CBA1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		71AEE692201B04EB00D3CBA1 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +78,13 @@
 		2B3520C61FD91C1A0021313A /* Animation_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				71AEE68E201B039A00D3CBA1 /* Animation_Swift */,
 				2B3520E01FD9232E0021313A /* Animation */,
 				2B3520DD1FD922B40021313A /* Base */,
 				2B3520C71FD91C1A0021313A /* AppDelegate.swift */,
 				2B3520D91FD91F4B0021313A /* ViewController.swift */,
+				710CFFB8201884CE00C3F49E /* LeftViewController.swift */,
+				710CFFB62018705400C3F49E /* MasterViewController.swift */,
 				2B3520CB1FD91C1A0021313A /* Main.storyboard */,
 				2B3520CE1FD91C1A0021313A /* Assets.xcassets */,
 				2B3520D01FD91C1A0021313A /* LaunchScreen.storyboard */,
@@ -99,6 +112,24 @@
 				2B3520E91FD92B810021313A /* AffineTransformController.swift */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		71AEE68E201B039A00D3CBA1 /* Animation_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				71AEE68F201B03CE00D3CBA1 /* NavBar */,
+			);
+			path = Animation_Swift;
+			sourceTree = "<group>";
+		};
+		71AEE68F201B03CE00D3CBA1 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				71AEE690201B03E000D3CBA1 /* Entry.swift */,
+				71AEE692201B04EB00D3CBA1 /* EntryCell.swift */,
+				71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */,
+			);
+			path = NavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,12 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */,
 				2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */,
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
 				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,
 				2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */,
 				2B3520E41FD928F10021313A /* KeyFrameAnimationController.swift in Sources */,
+				71AEE695201B06AE00D3CBA1 /* NavBarAnimationController.swift in Sources */,
+				710CFFB9201884CE00C3F49E /* LeftViewController.swift in Sources */,
+				710CFFB72018705400C3F49E /* MasterViewController.swift in Sources */,
 				2B3520DA1FD91F4B0021313A /* ViewController.swift in Sources */,
+				71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */,
 				2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */,
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
 				2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */,
