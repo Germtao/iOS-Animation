@@ -114,9 +114,17 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		716160BB202014F50048011C /* lockScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lockScreen;
+			sourceTree = "<group>";
+		};
 		71AEE68E201B039A00D3CBA1 /* Animation_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				716160BB202014F50048011C /* lockScreen */,
 				71AEE68F201B03CE00D3CBA1 /* NavBar */,
 			);
 			path = Animation_Swift;
