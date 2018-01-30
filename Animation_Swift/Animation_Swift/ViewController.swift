@@ -21,11 +21,6 @@ class ViewController: UIViewController {
         
         initSubViews()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
     
     // MARK - Helper Func
     func setMessageLabel(_ messageLabel: UILabel, frame: CGRect, text: String, textColor: UIColor, numberOfLines: Int, textAlignment: NSTextAlignment, font: UIFont) {
@@ -50,7 +45,7 @@ class ViewController: UIViewController {
     }
 
     private func initSubViews() {
-        let frame: CGRect = CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT - kNAVIBAR_HEIGHT)
+        let frame: CGRect = CGRect.init(x: 0, y: 0, width: kSCREEN_WIDTH, height: kSAFEAREA_HEIGHT)
         tableView = UITableView.init(frame: frame, style: UITableViewStyle.plain)
         tableView.delegate = self;
         tableView.dataSource = self;
@@ -115,9 +110,8 @@ extension ViewController: UITableViewDelegate {
         default:
             break
         }
-        
-        vc.view.backgroundColor = UIColor.white
         vc.title = titles[indexPath.row]
+        vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
