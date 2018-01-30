@@ -25,6 +25,9 @@
 		71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE690201B03E000D3CBA1 /* Entry.swift */; };
 		71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE692201B04EB00D3CBA1 /* EntryCell.swift */; };
 		71AEE695201B06AE00D3CBA1 /* NavBarAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */; };
+		71F3CF8020204C66006F7276 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF7F20204C66006F7276 /* Annotation.swift */; };
+		71F3CF8220204D89006F7276 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF8120204D89006F7276 /* AnnotationView.swift */; };
+		71F3CF84202056F7006F7276 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF83202056F7006F7276 /* MapLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		71AEE690201B03E000D3CBA1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		71AEE692201B04EB00D3CBA1 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAnimationController.swift; sourceTree = "<group>"; };
+		71F3CF7F20204C66006F7276 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		71F3CF8120204D89006F7276 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		71F3CF83202056F7006F7276 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,8 @@
 		71AEE68E201B039A00D3CBA1 /* Animation_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				71F3CF852020623A006F7276 /* loadingDots */,
+				71F3CF7E20204ACF006F7276 /* mapLocation */,
 				716160BB202014F50048011C /* lockScreen */,
 				71AEE68F201B03CE00D3CBA1 /* NavBar */,
 			);
@@ -141,6 +149,23 @@
 				71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */,
 			);
 			path = NavBar;
+			sourceTree = "<group>";
+		};
+		71F3CF7E20204ACF006F7276 /* mapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				71F3CF7F20204C66006F7276 /* Annotation.swift */,
+				71F3CF8120204D89006F7276 /* AnnotationView.swift */,
+				71F3CF83202056F7006F7276 /* MapLocationViewController.swift */,
+			);
+			path = mapLocation;
+			sourceTree = "<group>";
+		};
+		71F3CF852020623A006F7276 /* loadingDots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = loadingDots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +248,15 @@
 				2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */,
 				2B3520E41FD928F10021313A /* KeyFrameAnimationController.swift in Sources */,
 				71AEE695201B06AE00D3CBA1 /* NavBarAnimationController.swift in Sources */,
+				71F3CF8220204D89006F7276 /* AnnotationView.swift in Sources */,
 				710CFFB9201884CE00C3F49E /* LeftViewController.swift in Sources */,
 				710CFFB72018705400C3F49E /* MasterViewController.swift in Sources */,
+				71F3CF8020204C66006F7276 /* Annotation.swift in Sources */,
 				2B3520DA1FD91F4B0021313A /* ViewController.swift in Sources */,
 				71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */,
 				2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */,
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
+				71F3CF84202056F7006F7276 /* MapLocationViewController.swift in Sources */,
 				2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
