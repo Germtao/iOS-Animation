@@ -21,6 +21,7 @@
 		2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3520E91FD92B810021313A /* AffineTransformController.swift */; };
 		710CFFB72018705400C3F49E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CFFB62018705400C3F49E /* MasterViewController.swift */; };
 		710CFFB9201884CE00C3F49E /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710CFFB8201884CE00C3F49E /* LeftViewController.swift */; };
+		716160BD202017540048011C /* LockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716160BC202017540048011C /* LockScreenViewController.swift */; };
 		71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE690201B03E000D3CBA1 /* Entry.swift */; };
 		71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE692201B04EB00D3CBA1 /* EntryCell.swift */; };
 		71AEE695201B06AE00D3CBA1 /* NavBarAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */; };
@@ -43,6 +44,7 @@
 		2B3520E91FD92B810021313A /* AffineTransformController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AffineTransformController.swift; sourceTree = "<group>"; };
 		710CFFB62018705400C3F49E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		710CFFB8201884CE00C3F49E /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		716160BC202017540048011C /* LockScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenViewController.swift; sourceTree = "<group>"; };
 		71AEE690201B03E000D3CBA1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		71AEE692201B04EB00D3CBA1 /* EntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		71AEE694201B06AE00D3CBA1 /* NavBarAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarAnimationController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		716160BB202014F50048011C /* lockScreen */ = {
 			isa = PBXGroup;
 			children = (
+				716160BC202017540048011C /* LockScreenViewController.swift */,
 			);
 			path = lockScreen;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */,
+				716160BD202017540048011C /* LockScreenViewController.swift in Sources */,
 				2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */,
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
 				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,

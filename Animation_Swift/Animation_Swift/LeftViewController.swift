@@ -75,6 +75,8 @@ extension LeftViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             vc = NavBarAnimationController()
+        case 1:
+            vc = LockScreenViewController()
         default:
             break
         }
