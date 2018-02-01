@@ -79,6 +79,8 @@ extension LeftViewController: UITableViewDelegate, UITableViewDataSource {
             vc = LockScreenViewController()
         case 2:
             vc = MapLocationViewController()
+        case 3:
+            vc = LoadingDotsViewController()
         default:
             break
         }

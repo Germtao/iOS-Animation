@@ -28,6 +28,8 @@
 		71F3CF8020204C66006F7276 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF7F20204C66006F7276 /* Annotation.swift */; };
 		71F3CF8220204D89006F7276 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF8120204D89006F7276 /* AnnotationView.swift */; };
 		71F3CF84202056F7006F7276 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF83202056F7006F7276 /* MapLocationViewController.swift */; };
+		71F3CF87202065C0006F7276 /* LoadingDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF86202065C0006F7276 /* LoadingDotsView.swift */; };
+		71F3CF8D20207DE2006F7276 /* LoadingDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF8C20207DE2006F7276 /* LoadingDotsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		71F3CF7F20204C66006F7276 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		71F3CF8120204D89006F7276 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		71F3CF83202056F7006F7276 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
+		71F3CF86202065C0006F7276 /* LoadingDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDotsView.swift; sourceTree = "<group>"; };
+		71F3CF8C20207DE2006F7276 /* LoadingDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDotsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 		71F3CF852020623A006F7276 /* loadingDots */ = {
 			isa = PBXGroup;
 			children = (
+				71F3CF86202065C0006F7276 /* LoadingDotsView.swift */,
+				71F3CF8C20207DE2006F7276 /* LoadingDotsViewController.swift */,
 			);
 			path = loadingDots;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				716160BD202017540048011C /* LockScreenViewController.swift in Sources */,
 				2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */,
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
+				71F3CF87202065C0006F7276 /* LoadingDotsView.swift in Sources */,
 				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,
 				2B3520E61FD929A20021313A /* GroupAnimationController.swift in Sources */,
 				2B3520E41FD928F10021313A /* KeyFrameAnimationController.swift in Sources */,
@@ -256,6 +263,7 @@
 				71AEE693201B04EB00D3CBA1 /* EntryCell.swift in Sources */,
 				2B3520E81FD92A4E0021313A /* TransitionAnimationController.swift in Sources */,
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
+				71F3CF8D20207DE2006F7276 /* LoadingDotsViewController.swift in Sources */,
 				71F3CF84202056F7006F7276 /* MapLocationViewController.swift in Sources */,
 				2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */,
 			);
