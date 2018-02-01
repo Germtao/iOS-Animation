@@ -81,6 +81,8 @@ extension LeftViewController: UITableViewDelegate, UITableViewDataSource {
             vc = MapLocationViewController()
         case 3:
             vc = LoadingDotsViewController()
+        case 5:
+            vc = StretchyHeaderViewController()
         default:
             break
         }
