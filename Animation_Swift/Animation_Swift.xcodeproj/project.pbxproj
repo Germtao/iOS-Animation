@@ -32,6 +32,8 @@
 		71F3CF8D20207DE2006F7276 /* LoadingDotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF8C20207DE2006F7276 /* LoadingDotsViewController.swift */; };
 		71F3CF902022E26D006F7276 /* StretchyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF8F2022E26D006F7276 /* StretchyHeaderViewController.swift */; };
 		71F3CF922022F24B006F7276 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF912022F24B006F7276 /* HeaderView.swift */; };
+		71F3CF952022FC90006F7276 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF942022FC90006F7276 /* ProgressView.swift */; };
+		71F3CF9720230D26006F7276 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3CF9620230D26006F7276 /* ProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		71F3CF8C20207DE2006F7276 /* LoadingDotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDotsViewController.swift; sourceTree = "<group>"; };
 		71F3CF8F2022E26D006F7276 /* StretchyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderViewController.swift; sourceTree = "<group>"; };
 		71F3CF912022F24B006F7276 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		71F3CF942022FC90006F7276 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		71F3CF9620230D26006F7276 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 		71AEE68E201B039A00D3CBA1 /* Animation_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				71F3CF932022FC22006F7276 /* progress */,
 				71F3CF8E2022E042006F7276 /* stretchyHeader */,
 				71F3CF852020623A006F7276 /* loadingDots */,
 				71F3CF7E20204ACF006F7276 /* mapLocation */,
@@ -186,6 +191,15 @@
 				71F3CF912022F24B006F7276 /* HeaderView.swift */,
 			);
 			path = stretchyHeader;
+			sourceTree = "<group>";
+		};
+		71F3CF932022FC22006F7276 /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				71F3CF942022FC90006F7276 /* ProgressView.swift */,
+				71F3CF9620230D26006F7276 /* ProgressViewController.swift */,
+			);
+			path = progress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 				71AEE691201B03E000D3CBA1 /* Entry.swift in Sources */,
 				716160BD202017540048011C /* LockScreenViewController.swift in Sources */,
 				2B3520EA1FD92B810021313A /* AffineTransformController.swift in Sources */,
+				71F3CF9720230D26006F7276 /* ProgressViewController.swift in Sources */,
 				2B3520DC1FD91FC30021313A /* TTDefine.swift in Sources */,
 				71F3CF87202065C0006F7276 /* LoadingDotsView.swift in Sources */,
 				2B3520DF1FD922B50021313A /* BaseViewController.swift in Sources */,
@@ -281,6 +296,7 @@
 				2B3520C81FD91C1A0021313A /* AppDelegate.swift in Sources */,
 				71F3CF8D20207DE2006F7276 /* LoadingDotsViewController.swift in Sources */,
 				71F3CF84202056F7006F7276 /* MapLocationViewController.swift in Sources */,
+				71F3CF952022FC90006F7276 /* ProgressView.swift in Sources */,
 				2B3520E21FD923420021313A /* BasicAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

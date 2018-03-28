@@ -83,6 +83,8 @@ extension LeftViewController: UITableViewDelegate, UITableViewDataSource {
             vc = LoadingDotsViewController()
         case 5:
             vc = StretchyHeaderViewController()
+        case 6:
+            vc = ProgressViewController()
         default:
             break
         }
